@@ -84,10 +84,10 @@ public abstract class MixinChatHud implements IChatHud
                              OrderedText text,
                              int x,
                              int y,
-                             int color,
-                             @Local(name = "u") int u)
+                             int color)
     {
-        RenderChatEvent.Text renderChatTextEvent = new RenderChatEvent.Text(currentLine, instance, text, x, y, color, u);
+        int alpha = color >>> 24;
+        RenderChatEvent.Text renderChatTextEvent = new RenderChatEvent.Text(currentLine, instance, text, x, y, color, alpha);
         EventBus.INSTANCE.dispatch(renderChatTextEvent);
         return renderChatTextEvent.isCanceled() ? 0 : instance.drawTextWithShadow(textRenderer, text, x, y, color);
     }

@@ -1,2 +1,9 @@
-![client_icon](https://github.com/pastimee/caspian/assets/68214996/dc5704a7-d7d2-47d1-9793-0ab32f8b59b1)
+[https://github.com/lolwut2/Shoreline-V2](https://github.com/lolwut2/Shoreline-V2)
 ---
+$25 exit-scammed client.  
+thx to lolwut for uploading the code(unbuildable)
+
+Not all features have been tested. 
+Chams was not. working originally; only the crash has been prevented for now
+
+![screenshot](image.png)
